@@ -10,7 +10,21 @@ let oWinCount = 0;
 
 $(document).ready(function() {
 
+  $('#reset').on('click', function() {
 
+    currentPlayer = 'X';
+    isWinner = false;
+    movesCounter = 1;
+
+    $('.board').empty();
+
+  }); //end of resetGame function.
+
+  // $('#whichPlayer').on('click', function() {
+  //
+  //
+  // });
+  // $('#scoreOne').html(`${xWinCount}`).fadeIn(3000);
 
   $('.board').on('click', function() {
 
@@ -31,6 +45,9 @@ $(document).ready(function() {
 
     } //end of if($(this).html()).
   }); //end of click handler
+
+
+
 
 
   const win = function(currentPlayer) {
@@ -72,23 +89,31 @@ $(document).ready(function() {
       console.log(`${currentPlayer} Wins`);
     } else if (movesCounter === 9) {
       console.log("it's a draw");
-    } //end of if
+
+      if (movesCounter === 9) {
+        $('#gameScore').html("It's a Draw!").fadeIn(2000);
+      }
+
+    } //end of if(movesCounter)
 
 
     if (isWinner === true) {
       $('#gameScore').html(`Player ${currentPlayer} Wins!`).fadeIn(2000);
 
 
+
       if (currentPlayer === 'X') {
         xWinCount += 1;
-        $('#scoreOne').html(`${xWinCount}`);
+        $('#scoreOne').html(`${xWinCount}`).fadeIn(3000);
       } else {
         oWinCount += 1;
-        $('#scoreTwo').html(`${oWinCount}`);
-      }
+        $('#scoreTwo').html(`${oWinCount}`).fadeIn(3000);
+      } //end of (currentPlayer)
 
     } //end of if (isWinner)
 
 
-  } //end of function
+
+
+  } //end of win function
 }); //end of $(document).ready(function()).
