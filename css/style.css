@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
 
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #e6ffe6;
+}
+
 h1 {
   /* border: 1px solid red; */
-  font-family: 'Raleway', sans-serif;
   font-size: 50px;
   text-align: center;
 }
 
+#gameScore {
+  display: none;
+  text-align: center;
+  font-size: 25px;
+}
+
 #first {
   /* border: 1px solid yellow; */
-  font-family: 'Raleway', sans-serif;
   float: left;
   font-size: 30px;
   margin-left: 250px;
@@ -17,7 +26,6 @@ h1 {
 
 #scoreOne {
   /* border: 1px solid purple; */
-  font-family: 'Raleway', sans-serif;
   float: center;
   font-size: 15px;
   text-align: center;
@@ -26,7 +34,6 @@ h1 {
 
 #second {
   /* border: 1px solid green; */
-  font-family: 'Raleway', sans-serif;
   float: right;
   font-size: 30px;
   margin-right: 250px;
@@ -34,7 +41,6 @@ h1 {
 
 #scoreTwo {
   /* border: 1px solid blue; */
-  font-family: 'Raleway', sans-serif;
   float: center;
   font-size: 15px;
   text-align: center;
@@ -44,13 +50,18 @@ table {
   width: 500px;
   height: 500px;
   margin-top: 300px;
-  /* margin-left: 700px; */
+  margin-left: 700px;
   align-self: center;
   border: 1px solid black;
-  font-family: 'Raleway', sans-serif;
 }
 
 table, th {
   border: 1px solid black;
   border-collapse: collapse;
+}
+
+#reset {
+  font-size: 50px;
+  text-align: center;
+  display: none;
 }
