@@ -6,7 +6,7 @@ This was my first project in the SEI course, I had to create a Tic Tac Toe game.
 
 ##Link to my Tic Tac Toe game
 
-
+https://github.com/brunabdesouza/tic-tac-toe.git
 
 ## Technologies Used
 
@@ -30,4 +30,4 @@ The plan is to add this feature and fix this css problem as soon as possible.
 
 ## My experience developing the game
 
-Having started the SEI course only two weeks ago and having no prior experience using any of the technologies I've used to build this game, I felt this project was very challenging and I have learned a lot from the challenges I had.   
+Having started the SEI course only two weeks ago and having no prior experience using any of the technologies I've used to build this game, I felt this project was very challenging and I have learned a lot from them.  
