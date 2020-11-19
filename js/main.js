@@ -1,7 +1,5 @@
 console.log('Tic Tac Toe');
 
-
-
 let currentPlayer = 'X';
 let isWinner = false;
 let movesCounter = 1;
@@ -10,6 +8,7 @@ let oWinCount = 0;
 
 $(document).ready(function() {
 
+  //this function lets the player to restart the game, if it is finished or not.
   $('#reset').on('click', function() {
 
     currentPlayer = 'X';
@@ -20,12 +19,9 @@ $(document).ready(function() {
 
   }); //end of resetGame function.
 
-  // $('#whichPlayer').on('click', function() {
-  //
-  //
-  // });
-  // $('#scoreOne').html(`${xWinCount}`).fadeIn(3000);
 
+
+  //This click function allows the player to click on each square of the board  and where it counts how many moves they have played.
   $('.board').on('click', function() {
 
     //Conditions for the player to be able to click a square. If the square isn't 'X', isn't 'O', isWinner is not 'false' and the game hasn't reached the end the current player wins.
@@ -44,12 +40,13 @@ $(document).ready(function() {
       } //end of if(currentPlayer)
 
     } //end of if($(this).html()).
+
   }); //end of click handler
 
 
 
 
-
+  // The win function has all conditions for each player to win the game and also if no one wins.
   const win = function(currentPlayer) {
 
     let gameOne = $('#box1').html();
@@ -97,11 +94,14 @@ $(document).ready(function() {
     } //end of if(movesCounter)
 
 
+
+
+    // This condition shows on the board who won the game.
     if (isWinner === true) {
       $('#gameScore').html(`Player ${currentPlayer} Wins!`).fadeIn(2000);
 
 
-
+      //This if condition counts the score points for each player
       if (currentPlayer === 'X') {
         xWinCount += 1;
         $('#scoreOne').html(`${xWinCount}`).fadeIn(3000);
@@ -114,6 +114,6 @@ $(document).ready(function() {
 
 
 
-
   } //end of win function
+
 }); //end of $(document).ready(function()).
