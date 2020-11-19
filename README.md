@@ -6,7 +6,7 @@ This was my first project in the SEI course, I had to create a Tic Tac Toe game.
 
 ## My Tic Tac Toe Game
 
-https://github.com/brunabdesouza/tic-tac-toe.git
+https://brunabdesouza.github.io/tic-tac-toe/
 
 ## Technologies Used
 
